@@ -54,9 +54,9 @@ public static class JenkinsBuild
         BuildProject(EnabledScenes, fullPathAndName, BuildTargetGroup.Standalone, BuildTarget.StandaloneLinux64, BuildOptions.None);
     }
  
-    private static Arugements FindArgs()
+    private static Arguements FindArgs()
     {
-        var returnValue = new Arugements();
+        var returnValue = new Arguements();
  
         // find: -executeMethod
         //   +1: JenkinsBuild.BuildMacOS
@@ -91,6 +91,26 @@ public static class JenkinsBuild
             System.Console.WriteLine("[JenkinsBuild] Incorrect Parameters for -executeMethod Format: -executeMethod JenkinsBuild.BuildWindows64 <app name> <output dir>");
  
         return returnValue;
+    }
+
+    public static void BuildUnityPackage()
+    {
+        var packageName = GetArg("-packageName");
+        AssetDatabase.ExportPackage("Assets", "NEWPACKAGE");
+    }
+    
+    //getting arguments from command line by argument name;
+    private static string GetArg(string name)
+    {
+        var args = System.Environment.GetCommandLineArgs();
+        for (int i = 0; i < args.Length; i++)
+        {
+            if (args[i] == name && args.Length > i + 1)
+            {
+                return args[i + 1];
+            }
+        }
+        return null;
     }
  
  
@@ -138,7 +158,7 @@ public static class JenkinsBuild
         }
     }
  
-    private class Arugements
+    private class Arguements
     {
         public string appName = "AppName";
         public string targetDir = "~/Desktop";
