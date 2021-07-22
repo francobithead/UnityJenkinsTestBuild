@@ -6,7 +6,16 @@ using UnityEngine;
 
 public class JenkinsBuild : MonoBehaviour
 {
-    static string[] EnabledScenes = FindEnabledEditorScenes();
+    private static string outputPath = "D:/Builds/JenkinsBuild/output";
+        
+    public static void PerformBuild ()
+    {
+        string[] scenes = { "Assets/Scenes/main.unity" };
+        
+        BuildPipeline.BuildPlayer(scenes,outputPath,BuildTarget.StandaloneWindows,BuildOptions.Development);
+    }
+    
+    /*static string[] EnabledScenes = FindEnabledEditorScenes();
   
     // ------------------------------------------------------------------------
     // called from Jenkins
@@ -129,5 +138,5 @@ public class JenkinsBuild : MonoBehaviour
     {
         public string appName = "AppName";
         public string targetDir = "~/Desktop";
-    }
+    }*/
 }
