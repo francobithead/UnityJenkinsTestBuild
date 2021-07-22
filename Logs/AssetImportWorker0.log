@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/GitHub/UnityJenkinsTestBuild/TestBuild
+D:/GitHub/UnityJenkinsTestBuild
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55966
-Successfully changed project path to: D:/GitHub/UnityJenkinsTestBuild/TestBuild
-D:/GitHub/UnityJenkinsTestBuild/TestBuild
+56383
+Successfully changed project path to: D:/GitHub/UnityJenkinsTestBuild
+D:/GitHub/UnityJenkinsTestBuild
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 32.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/GitHub/UnityJenkinsTestBuild/TestBuild/Assets
+[Subsystems] Discovering subsystems at path D:/GitHub/UnityJenkinsTestBuild/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,136 +35,77 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001907 seconds.
+Registered in 0.001930 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 30.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 32.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.524 seconds
+- Completed reload, in  1.541 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002299 seconds.
+Registered in 0.018173 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 30.46 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 32.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.845 seconds
+- Completed reload, in  0.870 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.0 MB.
-System memory in use after: 95.0 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2527.
-Total: 2.607100 ms (FindLiveObjects: 0.194300 ms CreateObjectMapping: 0.107800 ms MarkObjects: 2.145600 ms  DeleteObjects: 0.158600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2408073b1725f12c42fdea20c9fa979a') in 0.014979 seconds
-  Import took 0.017497 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.314629 seconds.
-  path: Assets/Scenes/main.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/main.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0512462b64271653743e0b48c3729f') in 0.006501 seconds
-  Import took 0.009508 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.362457 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(8622d3f4d4e429743b3a442871e9f243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(8622d3f4d4e429743b3a442871e9f243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249513e4e80abb1065f344c75103db1c') in 0.005182 seconds
-  Import took 0.007816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.916099 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.005110 seconds
-  Import took 0.007787 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.337266 seconds.
-  path: Assets/JenkinsBuild.cs
-  artifactKey: Guid(0aad0287230a4aa4db3dd0276cfd7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JenkinsBuild.cs using Guid(0aad0287230a4aa4db3dd0276cfd7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0b8bd9bda75961b2758112af33db8a') in 0.023294 seconds
-  Import took 0.038532 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002095 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.797 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.7 MB.
-System memory in use after: 93.7 MB.
+Unloading 2286 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.9 MB.
+System memory in use after: 102.0 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2532.
-Total: 2.067600 ms (FindLiveObjects: 0.218000 ms CreateObjectMapping: 0.086900 ms MarkObjects: 1.662600 ms  DeleteObjects: 0.098900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 100.495339 seconds.
-  path: Assets/JenkinsBuild.cs
-  artifactKey: Guid(0aad0287230a4aa4db3dd0276cfd7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JenkinsBuild.cs using Guid(0aad0287230a4aa4db3dd0276cfd7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc72dd9ed6807ee48edfe6b4608f1e0') in 0.005811 seconds
-  Import took 0.011958 seconds .
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 2718.
+Total: 1.846600 ms (FindLiveObjects: 0.188000 ms CreateObjectMapping: 0.087000 ms MarkObjects: 1.474800 ms  DeleteObjects: 0.096200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.051082 seconds.
-  path: Assets/JenkinsBuild.cs
-  artifactKey: Guid(0aad0287230a4aa4db3dd0276cfd7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JenkinsBuild.cs using Guid(0aad0287230a4aa4db3dd0276cfd7123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc72dd9ed6807ee48edfe6b4608f1e0') in 0.002295 seconds
-  Import took 0.006292 seconds .
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b4cbde9565bf190136f1148817e1ea') in 0.007526 seconds
+  Import took 0.015492 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002513 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.801 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.8 MB.
-System memory in use after: 93.8 MB.
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(0afcd82744c288f4fadeb4511e2c4418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(0afcd82744c288f4fadeb4511e2c4418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec35449c779c33d8fe8cff970ad88e1') in 0.004910 seconds
+  Import took 0.007368 seconds .
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2536.
-Total: 1.740500 ms (FindLiveObjects: 0.170100 ms CreateObjectMapping: 0.070800 ms MarkObjects: 1.414500 ms  DeleteObjects: 0.084200 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdddd331c3f1b7826858a8d92db67e39') in 0.108121 seconds
+  Import took 0.110694 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/BrainCloud
+  artifactKey: Guid(6fd4522d7b6a1d2469cdc0344e1e5840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrainCloud using Guid(6fd4522d7b6a1d2469cdc0344e1e5840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ee2a2b0f181b011fc0f99cd32bbd3b') in 0.004518 seconds
+  Import took 0.007479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/TextMesh Pro/Fonts
+  artifactKey: Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts using Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c860dfdf0522eec1202f36843e52d436') in 0.006168 seconds
+  Import took 0.029205 seconds .
+
