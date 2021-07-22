@@ -95,8 +95,7 @@ public static class JenkinsBuild
 
     public static void BuildUnityPackage()
     {
-        var packageName = GetArg("-packageName");
-        AssetDatabase.ExportPackage("Assets", "NEWPACKAGE");
+        AssetDatabase.ExportPackage("Assets", "NEWPACKAGE",ExportPackageOptions.Recurse);
     }
     
     //getting arguments from command line by argument name;
