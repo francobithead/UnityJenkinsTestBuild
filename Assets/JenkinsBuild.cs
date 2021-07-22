@@ -1,21 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+#if UNITY_EDITOR
 using UnityEditor.Build.Reporting;
+#endif
 using UnityEngine;
-
-public class JenkinsBuild : MonoBehaviour
+#if UNITY_EDITOR
+public static class JenkinsBuild
 {
-    private static string outputPath = "D:/Builds/JenkinsBuild/output";
-        
+    /*private static string outputPath = "D:/Builds/JenkinsBuild/output";
+
+    
     public static void PerformBuild ()
     {
         string[] scenes = { "Assets/Scenes/main.unity" };
         
         BuildPipeline.BuildPlayer(scenes,outputPath,BuildTarget.StandaloneWindows,BuildOptions.Development);
     }
+    */
     
-    /*static string[] EnabledScenes = FindEnabledEditorScenes();
+    static string[] EnabledScenes = FindEnabledEditorScenes();
   
     // ------------------------------------------------------------------------
     // called from Jenkins
@@ -138,5 +142,6 @@ public class JenkinsBuild : MonoBehaviour
     {
         public string appName = "AppName";
         public string targetDir = "~/Desktop";
-    }*/
+    }
 }
+#endif
