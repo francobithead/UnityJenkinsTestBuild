@@ -6,7 +6,7 @@ using UnityEditor.Build.Reporting;
 #endif
 using UnityEngine;
 #if UNITY_EDITOR
-public static class JenkinsBuild
+public class JenkinsBuild : MonoBehaviour
 {
     /*private static string outputPath = "D:/Builds/JenkinsBuild/output";
 
@@ -18,8 +18,8 @@ public static class JenkinsBuild
         BuildPipeline.BuildPlayer(scenes,outputPath,BuildTarget.StandaloneWindows,BuildOptions.Development);
     }
     */
-    
-    static string[] EnabledScenes = FindEnabledEditorScenes();
+
+    private static string[] EnabledScenes;//= FindEnabledEditorScenes();
   
     // ------------------------------------------------------------------------
     // called from Jenkins
@@ -92,12 +92,14 @@ public static class JenkinsBuild
  
         return returnValue;
     }
-
+    
+    [MenuItem(("AssetDatabase/Export"))]
     public static void BuildUnityPackage()
     {
         var exportedPackageAssetList = new List<string>();
         exportedPackageAssetList.Add("Assets/Braincloud");
         exportedPackageAssetList.Add("Assets/Plugins");
+        
         AssetDatabase.ExportPackage(exportedPackageAssetList.ToArray(), "NewPackage.unitypackage",ExportPackageOptions.Recurse | ExportPackageOptions.IncludeDependencies);
     }
     
@@ -114,8 +116,7 @@ public static class JenkinsBuild
         }
         return null;
     }
- 
- 
+
     // ------------------------------------------------------------------------
     // ------------------------------------------------------------------------
     private static string[] FindEnabledEditorScenes(){
